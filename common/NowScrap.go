@@ -873,17 +873,3 @@ func WriteToDataNew(row []string, provinceName string, itemSize int) {
 //	}
 //
 //}
-func getMerchantLocal() []int64 {
-	merchantIdJson := "51466,61096,51762,59545,59120,59118,59113,59111,59110,59570,59560,62596,62594,62592,62684,61086"
-	IDs := strings.Split(merchantIdJson, ",")
-	result := make([]int64, len(IDs))
-	for k, v := range IDs {
-		value, err := strconv.Atoi(v)
-		if err != nil {
-			fmt.Println(err)
-		}
-		result[k] = int64(value)
-
-	}
-	return result
-}
