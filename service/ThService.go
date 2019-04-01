@@ -20,7 +20,7 @@ package service
 
 import (
 	"context"
-	"grab-crawler/dto"
+	"spider-man/dto"
 )
 
 const name = "https://www.wongnai.com/"

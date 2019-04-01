@@ -25,7 +25,7 @@ import (
 	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"golang.org/x/net/html"
-	"grab-crawler/dto"
+	"spider-man/dto"
 	"io/ioutil"
 	"net/http"
 	"os"
