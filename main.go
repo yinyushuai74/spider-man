@@ -20,7 +20,7 @@ package main
 
 import (
 	"flag"
-	"grab-crawler/common"
+	"grab-crawler/service"
 )
 
 var(
@@ -38,9 +38,9 @@ func main() {
 
 	switch *mode {
 	case 0:
-		common.ScrapeNowMerchantRate(*cityID, *size, *sortType, *districtID)
+		service.ScrapeNowMerchantRate(*cityID, *size, *sortType, *districtID)
 	case 1:
-		common.ScrapeNowMerchant(*cityID, *size, *sortType, *districtID)
+		service.ScrapeNowMerchant(*cityID, *size, *sortType, *districtID)
 	}
 
 	//outFunc()

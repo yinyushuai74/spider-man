@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da90eee7-c712-49f4-aea8-b2e1de31376d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/common/NowScrap.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/NowScrap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grab-crawler" beforeDir="false" afterPath="$PROJECT_DIR$/grab-crawler" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merchant_Hà Nội_0.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/merchant_ho-chi-minh_0.csv" beforeDir="false" />
-    </list>
+    <list default="true" id="da90eee7-c712-49f4-aea8-b2e1de31376d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,7 +376,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10744811" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10744811" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -392,7 +387,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32846716" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50039715" side_tool="true" weight="0.3373585" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4988086" visible="true" weight="0.21836735" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4988086" visible="true" weight="0.21836735" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
