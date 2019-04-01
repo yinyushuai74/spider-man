@@ -28,7 +28,7 @@ var(
 	mode = flag.Int64("mode", 0, "with menu or not")
 	size = flag.Int("size", 5000, "total size per csv file")
 	districtID = flag.Int64("district", -1, "target district")
-	sortType = flag.Int64("district", 10, "sort type")
+	sortType = flag.Int64("sortType", 10, "sort type")
 
 )
 

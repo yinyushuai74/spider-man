@@ -157,6 +157,8 @@ func PutMerchantID(cityID int64, idChan chan int64, sortType int64, districtID i
 						districts = []*dto.MetaDistrict{v}
 						break
 					}
+				}
+				if districts == nil {
 					return &dto.MetaCity{}, 0
 				}
 			}
