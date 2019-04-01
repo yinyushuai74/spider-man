@@ -27,7 +27,8 @@ var(
 	cityID = flag.Int64("city", 217, "target city")
 	mode = flag.Int64("mode", 0, "with menu or not")
 	size = flag.Int("size", 5000, "total size per csv file")
-	district = flag.Int64("district", -1, "target district")
+	districtID = flag.Int64("district", -1, "target district")
+	sortType = flag.Int64("district", 10, "sort type")
 
 )
 
@@ -37,9 +38,9 @@ func main() {
 
 	switch *mode {
 	case 0:
-		common.ScrapeNowMerchantRate(*cityID, *size)
+		common.ScrapeNowMerchantRate(*cityID, *size, *sortType, *districtID)
 	case 1:
-		common.ScrapeNowMerchant(*cityID, *size)
+		common.ScrapeNowMerchant(*cityID, *size, *sortType, *districtID)
 	}
 
 	//outFunc()

@@ -147,18 +147,18 @@ func PutMerchantID(cityID int64, idChan chan int64, sortType int64, districtID i
 	citys := getMetaData()
 	var meteCity *dto.MetaCity
 	var districts []*dto.MetaDistrict
-	var targetDistrict *dto.MetaDistrict
 	for _, city := range citys {
 		if city.Id == cityID {
 			if districtID == -1{
 				districts = city.Districts
 			}else {
-				for _, v := range districts {
+				for _, v := range city.Districts {
 					if v.DistrictID == districtID {
-						targetDistrict = v
+						districts = []*dto.MetaDistrict{v}
+						break
 					}
+					return &dto.MetaCity{}, 0
 				}
-				districts = []*dto.MetaDistrict{}{targetDistrict}
 			}
 			meteCity = city
 			break
@@ -290,12 +290,12 @@ func MakeCVSNewRate(fileKey string) (*os.File, [][]string) {
 	return f, data
 }
 
-func ScrapeNowMerchant(cityId int64, rows int,sortType int64) {
+func ScrapeNowMerchant(cityId int64, rows int,sortType int64,districtID int64) {
 	idChan := make(chan int64)
 	//threadSize := make(chan bool, 30)
 	detailChan := make(chan dto.DetailTotal, 50)
 	ctx, cancel := context.WithCancel(context.Background())
-	city, size := PutMerchantID(cityId, idChan,sortType, cancel)
+	city, size := PutMerchantID(cityId, idChan,sortType,districtID, cancel)
 	fmt.Println("get MeteData done")
 	go func(idChan chan int64) {
 		for i := 0; i < 40; i++ {
@@ -311,12 +311,12 @@ func ScrapeNowMerchant(cityId int64, rows int,sortType int64) {
 	wg.Wait()
 }
 
-func ScrapeNowMerchantRate(cityId int64, rows int,sortType int64) {
+func ScrapeNowMerchantRate(cityId int64, rows int,sortType int64,districtID int64) {
 	idChan := make(chan int64)
 	//threadSize := make(chan bool, 30)
 	detailChan := make(chan dto.DetailTotal, 50)
 	ctx, cancel := context.WithCancel(context.Background())
-	city, size := PutMerchantID(cityId, idChan,sortType, cancel)
+	city, size := PutMerchantID(cityId, idChan,sortType,districtID, cancel)
 	fmt.Println("get MeteData done")
 	wg := sync.WaitGroup{}
 	go func(idChan chan int64) {
