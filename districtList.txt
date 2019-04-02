@@ -1,0 +1,154 @@
+"name":"Quận 1","district_id":1,"longitude":106.705287,"url_rewrite_name":"quan-1", "latitude":10.773242,"province_id":217
+"name":"Quận Gò Vấp","district_id":2,"longitude":106.671007,"url_rewrite_name":"quan-go-vap", "latitude":10.833306,"province_id":217
+"name":"Quận 2","district_id":4,"longitude":106.744527,"url_rewrite_name":"quan-2", "latitude":10.806792,"province_id":217
+"name":"Quận 3","district_id":5,"longitude":106.692556,"url_rewrite_name":"quan-3", "latitude":10.778969,"province_id":217
+"name":"Quận 4","district_id":6,"longitude":106.699829,"url_rewrite_name":"quan-4", "latitude":10.760614,"province_id":217
+"name":"Quận 5","district_id":7,"longitude":106.673387,"url_rewrite_name":"quan-5", "latitude":10.757467,"province_id":217
+"name":"Quận 6","district_id":8,"longitude":106.623666,"url_rewrite_name":"quan-6", "latitude":10.739085,"province_id":217
+"name":"Quận 7","district_id":9,"longitude":106.7197,"url_rewrite_name":"quan-7", "latitude":10.72468,"province_id":217
+"name":"Quận 8","district_id":10,"longitude":106.656282,"url_rewrite_name":"quan-8", "latitude":10.739327,"province_id":217
+"name":"Quận 9","district_id":11,"longitude":106.778398,"url_rewrite_name":"quan-9", "latitude":10.805949,"province_id":217
+"name":"Quận 10","district_id":12,"longitude":106.677499,"url_rewrite_name":"quan-10", "latitude":10.776259,"province_id":217
+"name":"Quận 11","district_id":13,"longitude":106.657012,"url_rewrite_name":"quan-11", "latitude":10.762864,"province_id":217
+"name":"Quận 12","district_id":14,"longitude":106.703206,"url_rewrite_name":"quan-12", "latitude":10.854146,"province_id":217
+"name":"Quận Bình Thạnh","district_id":15,"longitude":106.715484,"url_rewrite_name":"quan-binh-thanh", "latitude":10.802619,"province_id":217
+"name":"Quận Tân Bình","district_id":16,"longitude":106.659114,"url_rewrite_name":"quan-tan-binh", "latitude":10.798403,"province_id":217
+"name":"Quận Phú Nhuận","district_id":17,"longitude":106.673679,"url_rewrite_name":"quan-phu-nhuan", "latitude":10.796767,"province_id":217
+"name":"Quận Bình Tân","district_id":18,"longitude":106.619493,"url_rewrite_name":"quan-binh-tan", "latitude":10.729344,"province_id":217
+"name":"Quận Tân Phú","district_id":19,"longitude":106.629106,"url_rewrite_name":"quan-tan-phu", "latitude":10.794588,"province_id":217
+"name":"Quận Thủ Đức","district_id":693,"longitude":106.768522,"url_rewrite_name":"quan-thu-duc", "latitude":10.84319,"province_id":217
+"name":"Củ Chi","district_id":694,"longitude":106.485894,"url_rewrite_name":"cu-chi", "latitude":10.968408,"province_id":217
+"name":"Hóc Môn","district_id":695,"longitude":106.631576,"url_rewrite_name":"hoc-mon", "latitude":10.901609,"province_id":217
+"name":"Bình Chánh","district_id":696,"longitude":106.67163,"url_rewrite_name":"binh-chanh", "latitude":10.736413,"province_id":217
+"name":"Cần Giờ","district_id":698,"longitude":106.890879,"url_rewrite_name":"can-gio", "latitude":10.377187,"province_id":217
+"name":"Nhà Bè","district_id":699,"longitude":106.705163,"url_rewrite_name":"huyen-nha-be", "latitude":10.711877,"province_id":217
+"name":"Quận Ba Đình","district_id":20,"longitude":105.817758,"url_rewrite_name":"quan-ba-dinh", "latitude":21.027189,"province_id":218
+"name":"Quận Cầu Giấy","district_id":21,"longitude":105.797357,"url_rewrite_name":"quan-cau-giay", "latitude":21.009018,"province_id":218
+"name":"Quận Đống Đa","district_id":22,"longitude":105.822502,"url_rewrite_name":"quan-dong-da", "latitude":21.00572,"province_id":218
+"name":"Quận Hà Đông","district_id":23,"longitude":105.792289,"url_rewrite_name":"quan-ha-dong", "latitude":20.974704,"province_id":218
+"name":"Quận Hai Bà Trưng","district_id":24,"longitude":105.849891,"url_rewrite_name":"quan-hai-ba-trung", "latitude":21.012118,"province_id":218
+"name":"Quận Hoàn Kiếm","district_id":25,"longitude":105.908057,"url_rewrite_name":"quan-hoan-kiem", "latitude":21.051991,"province_id":218
+"name":"Quận Hoàng Mai","district_id":26,"longitude":105.851222,"url_rewrite_name":"quan-hoang-mai", "latitude":20.985954,"province_id":218
+"name":"Quận Long Biên","district_id":27,"longitude":105.901015,"url_rewrite_name":"quan-long-bien", "latitude":21.053364,"province_id":218
+"name":"Quận Tây Hồ","district_id":28,"longitude":105.812953,"url_rewrite_name":"quan-tay-ho", "latitude":21.073889,"province_id":218
+"name":"Quận Thanh Xuân","district_id":29,"longitude":105.85,"url_rewrite_name":"quan-thanh-xuan", "latitude":21.033333,"province_id":218
+"name":"Gia Lâm","district_id":678,"longitude":105.885662,"url_rewrite_name":"gia-lam", "latitude":21.05023,"province_id":218
+"name":"Thanh Trì","district_id":688,"longitude":105.851048,"url_rewrite_name":"thanh-tri", "latitude":20.921933,"province_id":218
+"name":"Thường Tín","district_id":689,"longitude":105.851048,"url_rewrite_name":"thuong-tin", "latitude":20.921933,"province_id":218
+"name":"Quận Bắc Từ Liêm","district_id":690,"longitude":105.753853,"url_rewrite_name":"bac-tu-liem", "latitude":21.039044,"province_id":218
+"name":"Quận Nam Từ Liêm","district_id":945,"longitude":105.77129,"url_rewrite_name":"quan-nam-tu-liem", "latitude":21.034054,"province_id":218
+"name":"Quận Cẩm Lệ","district_id":30,"longitude":108.209502,"url_rewrite_name":"quan-cam-le", "latitude":16.034489,"province_id":219
+"name":"Quận Hải Châu","district_id":31,"longitude":108.222574,"url_rewrite_name":"quan-hai-chau", "latitude":16.071625,"province_id":219
+"name":"Quận Liên Chiểu","district_id":32,"longitude":108.145187,"url_rewrite_name":"quan-lien-chieu", "latitude":16.070001,"province_id":219
+"name":"Quận Ngũ Hành Sơn","district_id":33,"longitude":108.239334,"url_rewrite_name":"quan-ngu-hanh-son", "latitude":16.036841,"province_id":219
+"name":"Quận Sơn Trà","district_id":34,"longitude":108.24614,"url_rewrite_name":"quan-son-tra", "latitude":16.066476,"province_id":219
+"name":"Quận Thanh Khê","district_id":35,"longitude":108.209399,"url_rewrite_name":"quan-thanh-khe", "latitude":16.069166,"province_id":219
+"name":"Hòa Vang","district_id":158,"longitude":107.983333,"url_rewrite_name":"hoa-vang", "latitude":15.983333,"province_id":219
+"name":"Hoàng Sa","district_id":159,"longitude":107.983333,"url_rewrite_name":"hoang-sa", "latitude":15.983333,"province_id":219
+"name":"Quận Ninh Kiều","district_id":43,"longitude":105.783333,"url_rewrite_name":"quan-ninh-kieu", "latitude":10.033333,"province_id":221
+"name":"Quận Bình Thủy","district_id":44,"longitude":105.773567,"url_rewrite_name":"quan-binh-thuy", "latitude":10.051853,"province_id":221
+"name":"Quận Cái Răng","district_id":45,"longitude":105.784521,"url_rewrite_name":"quan-cai-rang", "latitude":10.014264,"province_id":221
+"name":"Quận Ô Môn","district_id":46,"longitude":105.784521,"url_rewrite_name":"quan-o-mon", "latitude":10.014264,"province_id":221
+"name":"Quận Thốt Nốt","district_id":47,"longitude":105.530263,"url_rewrite_name":"quan-thot-not", "latitude":10.272502,"province_id":221
+"name":"Hưng Phú","district_id":117,"longitude":105.782011,"url_rewrite_name":"hung-phu", "latitude":10.018474,"province_id":221
+"name":"Phong Điền","district_id":118,"longitude":105.652983,"url_rewrite_name":"phong-dien", "latitude":10.006319,"province_id":221
+"name":"Cờ Đỏ","district_id":119,"longitude":105.652983,"url_rewrite_name":"co-do", "latitude":10.006319,"province_id":221
+"name":"Thới Lai","district_id":120,"longitude":105.652983,"url_rewrite_name":"thoi-lai", "latitude":10.006319,"province_id":221
+"name":"Vĩnh Thạnh","district_id":121,"longitude":105.652983,"url_rewrite_name":"vinh-thanh", "latitude":10.006319,"province_id":221
+"name":"Quận Dương Kinh","district_id":36,"longitude":107.050567,"url_rewrite_name":"quan-duong-kinh", "latitude":20.72499,"province_id":220
+"name":"Quận Đồ Sơn","district_id":37,"longitude":106.698532,"url_rewrite_name":"quan-do-son", "latitude":20.824079,"province_id":220
+"name":"Quận Hải An","district_id":38,"longitude":106.701698,"url_rewrite_name":"quan-hai-an", "latitude":20.828538,"province_id":220
+"name":"Quận Kiến An","district_id":39,"longitude":106.655133,"url_rewrite_name":"quan-kien-an", "latitude":20.825759,"province_id":220
+"name":"Quận Hồng Bàng","district_id":40,"longitude":106.686639,"url_rewrite_name":"quan-hong-bang", "latitude":20.865138,"province_id":220
+"name":"Quận Ngô Quyền","district_id":41,"longitude":106.710892,"url_rewrite_name":"quan-ngo-quyen", "latitude":20.87015,"province_id":220
+"name":"Quận Lê Chân","district_id":42,"longitude":106.68451,"url_rewrite_name":"quan-le-chan", "latitude":20.835109,"province_id":220
+"name":"An Dương","district_id":109,"longitude":106.667461,"url_rewrite_name":"an-duong", "latitude":20.851232,"province_id":220
+"name":"An Lão","district_id":110,"longitude":106.667461,"url_rewrite_name":"an-lao", "latitude":20.851232,"province_id":220
+"name":"Bạch Long Vĩ","district_id":111,"longitude":106.667461,"url_rewrite_name":"bach-long-vi", "latitude":20.851232,"province_id":220
+"name":"Cát Hải","district_id":112,"longitude":106.87094,"url_rewrite_name":"cat-hai", "latitude":20.809267,"province_id":220
+"name":"Kiến Thụy","district_id":113,"longitude":106.87094,"url_rewrite_name":"kien-thuy", "latitude":20.809267,"province_id":220
+"name":"Tiên Lãng","district_id":114,"longitude":106.87094,"url_rewrite_name":"tien-lang", "latitude":20.809267,"province_id":220
+"name":"Vĩnh Bảo","district_id":115,"longitude":106.87094,"url_rewrite_name":"vinh-bao", "latitude":20.809267,"province_id":220
+"name":"Thủy Nguyên","district_id":116,"longitude":106.672697,"url_rewrite_name":"thuy-nguyen", "latitude":20.902718,"province_id":220
+"name":"Tp. Huế","district_id":301,"longitude":107.59425,"url_rewrite_name":"tp-hue", "latitude":16.469347,"province_id":273
+"name":"Thị xã Hương Thủy","district_id":302,"longitude":107.59425,"url_rewrite_name":"thi-xa-huong-thuy", "latitude":16.469347,"province_id":273
+"name":"A Lưới","district_id":303,"longitude":107.59425,"url_rewrite_name":"a-luoi", "latitude":16.469347,"province_id":273
+"name":"Hương Trà","district_id":304,"longitude":107.59425,"url_rewrite_name":"huong-tra", "latitude":16.469347,"province_id":273
+"name":"Nam Đông","district_id":305,"longitude":107.59425,"url_rewrite_name":"nam-dong", "latitude":16.469347,"province_id":273
+"name":"Phong Điền","district_id":306,"longitude":107.59425,"url_rewrite_name":"phong-dien", "latitude":16.469347,"province_id":273
+"name":"Phú Lộc","district_id":307,"longitude":107.99243,"url_rewrite_name":"phu-loc", "latitude":16.302977,"province_id":273
+"name":"Phú Vang","district_id":308,"longitude":107.60042,"url_rewrite_name":"phu-vang", "latitude":16.504628,"province_id":273
+"name":"Quảng Điền","district_id":309,"longitude":107.60042,"url_rewrite_name":"quang-dien", "latitude":16.504628,"province_id":273
+"name":"Tp. Nha Trang","district_id":386,"longitude":109.194517,"url_rewrite_name":"tp-nha-trang", "latitude":12.256742,"province_id":248
+"name":"Tp. Cam Ranh","district_id":387,"longitude":109.194517,"url_rewrite_name":"thi-xa-cam-ranh", "latitude":12.256742,"province_id":248
+"name":"Vạn Ninh","district_id":388,"longitude":109.194517,"url_rewrite_name":"van-ninh", "latitude":12.256742,"province_id":248
+"name":"Ninh Hòa","district_id":389,"longitude":109.287455,"url_rewrite_name":"ninh-hoa", "latitude":12.449997,"province_id":248
+"name":"Diên Khánh","district_id":390,"longitude":109.287455,"url_rewrite_name":"dien-khanh", "latitude":12.449997,"province_id":248
+"name":"Khánh Vĩnh","district_id":391,"longitude":109.287455,"url_rewrite_name":"khanh-vinh", "latitude":12.449997,"province_id":248
+"name":"Khánh Sơn","district_id":392,"longitude":109.287455,"url_rewrite_name":"khanh-son", "latitude":12.449997,"province_id":248
+"name":"Cam Lâm","district_id":393,"longitude":109.287455,"url_rewrite_name":"cam-lam", "latitude":12.449997,"province_id":248
+"name":"Trường Sa","district_id":394,"longitude":109.287455,"url_rewrite_name":"truong-sa", "latitude":12.449997,"province_id":248
+"name":"Định Quán","district_id":48,"longitude":107.352047,"url_rewrite_name":"dinh-quan", "latitude":11.197684,"province_id":222
+"name":"Long Thành","district_id":49,"longitude":107.024417,"url_rewrite_name":"long-thanh", "latitude":10.678705,"province_id":222
+"name":"Xuân Lộc","district_id":50,"longitude":107.024417,"url_rewrite_name":"xuan-loc", "latitude":10.678705,"province_id":222
+"name":"Vĩnh Cửu","district_id":51,"longitude":106.786273,"url_rewrite_name":"vinh-cuu", "latitude":10.996415,"province_id":222
+"name":"Trảng Bom","district_id":52,"longitude":106.997847,"url_rewrite_name":"trang-bom", "latitude":10.949488,"province_id":222
+"name":"Thống Nhất","district_id":53,"longitude":106.835153,"url_rewrite_name":"thong-nhat", "latitude":10.948644,"province_id":222
+"name":"Nhơn Trạch","district_id":55,"longitude":106.858091,"url_rewrite_name":"nhon-trach", "latitude":10.659258,"province_id":222
+"name":"Cẩm Mỹ","district_id":56,"longitude":106.858091,"url_rewrite_name":"cam-my", "latitude":10.659258,"province_id":222
+"name":"Tp. Biên Hòa","district_id":57,"longitude":106.809052,"url_rewrite_name":"tp-bien-hoa", "latitude":10.952555,"province_id":222
+"name":"Thị xã Long Khánh","district_id":66,"longitude":107.238107,"url_rewrite_name":"thi-xa-long-khanh", "latitude":10.931543,"province_id":222
+"name":"Tân Phú","district_id":67,"longitude":107.238107,"url_rewrite_name":"tan-phu", "latitude":10.931543,"province_id":222
+"name":"Tp. Vinh","district_id":178,"longitude":105.682018,"url_rewrite_name":"tp-vinh", "latitude":18.679158,"province_id":257
+"name":"Thị xã Cửa Lò","district_id":179,"longitude":105.682018,"url_rewrite_name":"thi-xa-cua-lo", "latitude":18.679158,"province_id":257
+"name":"Thị xã Thái Hòa","district_id":180,"longitude":105.682018,"url_rewrite_name":"thi-xa-thai-hoa", "latitude":18.679158,"province_id":257
+"name":"Anh Sơn","district_id":181,"longitude":105.682018,"url_rewrite_name":"anh-son", "latitude":18.679158,"province_id":257
+"name":"Con Cuông","district_id":182,"longitude":105.682018,"url_rewrite_name":"con-cuong", "latitude":18.679158,"province_id":257
+"name":"Diễn Châu","district_id":183,"longitude":105.682018,"url_rewrite_name":"dien-chau", "latitude":18.679158,"province_id":257
+"name":"Đô Lương","district_id":184,"longitude":105.682018,"url_rewrite_name":"do-luong", "latitude":18.679158,"province_id":257
+"name":"Hưng Nguyên","district_id":185,"longitude":105.663981,"url_rewrite_name":"hung-nguyen", "latitude":18.600612,"province_id":257
+"name":"Quỳ Châu","district_id":186,"longitude":105.663981,"url_rewrite_name":"quy-chau", "latitude":18.600612,"province_id":257
+"name":"Kỳ Sơn","district_id":187,"longitude":105.663981,"url_rewrite_name":"ky-son", "latitude":18.600612,"province_id":257
+"name":"Nam Đàn","district_id":188,"longitude":105.497353,"url_rewrite_name":"nam-dan", "latitude":18.700765,"province_id":257
+"name":"Nghi Lộc","district_id":189,"longitude":105.497353,"url_rewrite_name":"nghi-loc", "latitude":18.700765,"province_id":257
+"name":"Nghĩa Đàn","district_id":190,"longitude":105.497353,"url_rewrite_name":"nghia-dan", "latitude":18.700765,"province_id":257
+"name":"Quế Phong","district_id":191,"longitude":105.497353,"url_rewrite_name":"que-phong", "latitude":18.700765,"province_id":257
+"name":"Quỳ Hợp","district_id":192,"longitude":105.497353,"url_rewrite_name":"quy-hop", "latitude":18.700765,"province_id":257
+"name":"Quỳnh Lưu","district_id":193,"longitude":105.497353,"url_rewrite_name":"quynh-luu", "latitude":18.700765,"province_id":257
+"name":"Tân Kỳ","district_id":194,"longitude":105.497353,"url_rewrite_name":"tan-ky", "latitude":18.700765,"province_id":257
+"name":"Thanh Chương","district_id":195,"longitude":105.497353,"url_rewrite_name":"thanh-chuong", "latitude":18.700765,"province_id":257
+"name":"Tương Dương","district_id":196,"longitude":105.497353,"url_rewrite_name":"tuong-duong", "latitude":18.700765,"province_id":257
+"name":"Yên Thành","district_id":197,"longitude":105.497353,"url_rewrite_name":"yen-thanh", "latitude":18.700765,"province_id":257
+"name":"Tp. Vũng Tàu","district_id":58,"longitude":107.060539,"url_rewrite_name":"tp-vung-tau", "latitude":10.360384,"province_id":223
+"name":"Tp. Bà Rịa","district_id":59,"longitude":107.161889,"url_rewrite_name":"tp-ba-ria", "latitude":10.495534,"province_id":223
+"name":"Huyện Châu Đức","district_id":60,"longitude":107.161889,"url_rewrite_name":"huyen-chau-duc", "latitude":10.495534,"province_id":223
+"name":"Huyện Côn Đảo","district_id":61,"longitude":106.631201,"url_rewrite_name":"huyen-con-dao", "latitude":8.700683,"province_id":223
+"name":"Huyện Long Điền","district_id":62,"longitude":106.631201,"url_rewrite_name":"huyen-long-dien", "latitude":8.700683,"province_id":223
+"name":"Huyện Đất Đỏ","district_id":63,"longitude":107.279069,"url_rewrite_name":"huyen-dat-do", "latitude":10.414486,"province_id":223
+"name":"Huyện Tân Thành","district_id":64,"longitude":107.058275,"url_rewrite_name":"huyen-tan-thanh", "latitude":10.563029,"province_id":223
+"name":"Huyện Xuyên Mộc","district_id":65,"longitude":107.058275,"url_rewrite_name":"huyen-xuyen-moc", "latitude":10.563029,"province_id":223
+"name":"Huyện Long Sơn","district_id":702,"longitude":107.059643,"url_rewrite_name":"huyen-long-son", "latitude":10.476111,"province_id":223
+"name":"Thị xã Thủ Dầu Một","district_id":122,"longitude":106.631584,"url_rewrite_name":"thi-xa-thu-dau-mot", "latitude":11.043352,"province_id":230
+"name":"Bến Cát","district_id":123,"longitude":106.60871,"url_rewrite_name":"ben-cat", "latitude":11.126705,"province_id":230
+"name":"Dầu Tiếng","district_id":124,"longitude":106.397095,"url_rewrite_name":"dau-tieng", "latitude":11.365944,"province_id":230
+"name":"Tân Uyên","district_id":125,"longitude":106.759279,"url_rewrite_name":"tan-uyen", "latitude":10.97572,"province_id":230
+"name":"Phú Giáo","district_id":126,"longitude":106.759279,"url_rewrite_name":"phu-giao", "latitude":10.97572,"province_id":230
+"name":"Thuận An","district_id":127,"longitude":106.702825,"url_rewrite_name":"thuan-an", "latitude":10.906163,"province_id":230
+"name":"Dĩ An","district_id":128,"longitude":106.759743,"url_rewrite_name":"di-an", "latitude":10.887225,"province_id":230
+"name":"Bàu Bàng","district_id":824,"longitude":106.607784,"url_rewrite_name":"bau-bang", "latitude":11.328191,"province_id":230
+"name":"Tp. Đà Lạt","district_id":246,"longitude":108.4342,"url_rewrite_name":"tp-da-lat", "latitude":11.950431,"province_id":254
+"name":"Tp. Hội An","district_id":576,"longitude":108.330962,"url_rewrite_name":"tp-hoi-an", "latitude":15.877495,"province_id":263
+"name":"Tp. Hạ Long","district_id":547,"longitude":107.054552,"url_rewrite_name":"tp-ha-long", "latitude":20.956151,"province_id":265
+"name":"Tp. Móng Cái","district_id":548,"longitude":107.054552,"url_rewrite_name":"tp-mong-cai", "latitude":20.956151,"province_id":265
+"name":"Tp. Cẩm Phả","district_id":549,"longitude":107.250016,"url_rewrite_name":"tp-cam-pha", "latitude":21.008906,"province_id":265
+"name":"Tp. Uông Bí","district_id":550,"longitude":106.736974,"url_rewrite_name":"thi-xa-uong-bi", "latitude":21.036684,"province_id":265
+"name":"Ba Chẽ","district_id":551,"longitude":106.736974,"url_rewrite_name":"ba-che", "latitude":21.036684,"province_id":265
+"name":"Bình Liêu","district_id":552,"longitude":106.736974,"url_rewrite_name":"binh-lieu", "latitude":21.036684,"province_id":265
+"name":"Cô Tô","district_id":553,"longitude":106.736974,"url_rewrite_name":"co-to", "latitude":21.036684,"province_id":265
+"name":"Đầm Hà","district_id":554,"longitude":106.736974,"url_rewrite_name":"dam-ha", "latitude":21.036684,"province_id":265
+"name":"Đông Triều","district_id":555,"longitude":106.736974,"url_rewrite_name":"dong-trieu", "latitude":21.036684,"province_id":265
+"name":"Hải Hà","district_id":556,"longitude":106.736974,"url_rewrite_name":"hai-ha", "latitude":21.036684,"province_id":265
+"name":"Hoành Bồ","district_id":557,"longitude":106.736974,"url_rewrite_name":"hoanh-bo", "latitude":21.036684,"province_id":265
+"name":"Tiên Yên","district_id":558,"longitude":106.736974,"url_rewrite_name":"tien-yen", "latitude":21.036684,"province_id":265
+"name":"Vân Đồn","district_id":559,"longitude":107.48879,"url_rewrite_name":"van-don", "latitude":21.110671,"province_id":265
+"name":"Thị Xã Quảng Yên","district_id":560,"longitude":107.48879,"url_rewrite_name":"Quang-yen", "latitude":21.110671,"province_id":265
