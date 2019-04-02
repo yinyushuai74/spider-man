@@ -23,16 +23,17 @@ import (
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
-	"github.com/PuerkitoBio/goquery"
-	"golang.org/x/net/html"
-	"spider-man/dto"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"regexp"
+	"spider-man/dto"
 	"strconv"
 	"strings"
 	"sync"
+
+	"github.com/PuerkitoBio/goquery"
+	"golang.org/x/net/html"
 )
 
 const (
@@ -124,20 +125,20 @@ func getMerchantIDs(cityID int64, districts []*dto.MetaDistrict, sortType int64)
 	merchantIDs := make([]int64, 0)
 
 	for _, district := range districts {
-			req := &dto.DeliveryIDsRequest{
-				CategoryGroup: 1,
-				CityID:        cityID,
-				DeliveryOnly:  true,
-				FoodyServices: []int64{1},
-				Keyword:       "",
-				SortType:      sortType,
-				DistrictIds:   []int64{district.DistrictID},
-			}
-			respReader := generateNOWRequest("POST", deliveryIDs, req)
-			deliveryIDs := &dto.DeliveryIDsResp{}
-			json.Unmarshal(respReader, deliveryIDs)
-			merchantIDs = append(merchantIDs, deliveryIDs.Reply.DeliveryIds...)
+		req := &dto.DeliveryIDsRequest{
+			CategoryGroup: 1,
+			CityID:        cityID,
+			DeliveryOnly:  true,
+			FoodyServices: []int64{1},
+			Keyword:       "",
+			SortType:      sortType,
+			DistrictIds:   []int64{district.DistrictID},
 		}
+		respReader := generateNOWRequest("POST", deliveryIDs, req)
+		deliveryIDs := &dto.DeliveryIDsResp{}
+		json.Unmarshal(respReader, deliveryIDs)
+		merchantIDs = append(merchantIDs, deliveryIDs.Reply.DeliveryIds...)
+	}
 
 	return merchantIDs
 
@@ -149,9 +150,9 @@ func PutMerchantID(cityID int64, idChan chan int64, sortType int64, districtID i
 	var districts []*dto.MetaDistrict
 	for _, city := range citys {
 		if city.Id == cityID {
-			if districtID == -1{
+			if districtID == -1 {
 				districts = city.Districts
-			}else {
+			} else {
 				for _, v := range city.Districts {
 					if v.DistrictID == districtID {
 						districts = []*dto.MetaDistrict{v}
@@ -172,7 +173,7 @@ func PutMerchantID(cityID int64, idChan chan int64, sortType int64, districtID i
 	size := len(merchantIDs)
 	go func(ids []int64) {
 		for _, id := range merchantIDs {
-				idChan <- id
+			idChan <- id
 		}
 		fmt.Println("put merchantID done")
 		cancel()
@@ -204,7 +205,7 @@ func GetMerchantDetailForRating(id int64, detailChan chan dto.DetailTotal) {
 	restDetail := &dto.DeliveryDetailResp{}
 	respBody := generateNOWRequest("GET", fmt.Sprintf(getDetail, id), nil)
 	json.Unmarshal(respBody, restDetail)
-	if restDetail.Reply == nil ||restDetail.Reply.DeliveryDetail == nil{
+	if restDetail.Reply == nil || restDetail.Reply.DeliveryDetail == nil {
 		return
 	}
 	DetailTotal := dto.DetailTotal{
@@ -235,8 +236,12 @@ func convertInfoWithRating(detaiChan chan dto.DetailTotal, provinceName string, 
 		case detail := <-detaiChan:
 			num++
 			if detail.DeliveryDetail != nil && detail.DeliveryDetail.Rating != nil {
-				rate = fmt.Sprintf("%f",detail.DeliveryDetail.Rating.Avg)
+				rate = fmt.Sprintf("%f", detail.DeliveryDetail.Rating.Avg)
 				reviewSize = formatInt64(detail.DeliveryDetail.Rating.TotalReview)
+			}
+			promoByte, err := json.Marshal(detail.DeliveryDetail.Delivery.Promotions)
+			if err != nil {
+				fmt.Println("marshal promotion err")
 			}
 			row := []string{
 				formatInt64(detail.DeliveryDetail.DeliveryId),
@@ -248,6 +253,9 @@ func convertInfoWithRating(detaiChan chan dto.DetailTotal, provinceName string, 
 				"",
 				rate,
 				reviewSize,
+				strconv.FormatBool(detail.DeliveryDetail.Position.IsVerified),
+				string(promoByte),
+
 			}
 			if itemNum == 0 {
 				f, data = MakeCVSNewRate(provinceName + "_" + strconv.Itoa(itemNum/itemSize))
@@ -278,7 +286,6 @@ func convertInfoWithRating(detaiChan chan dto.DetailTotal, provinceName string, 
 
 }
 
-
 func MakeCVSNewRate(fileKey string) (*os.File, [][]string) {
 	fileName := "merchant_" + fileKey + ".csv"
 	f, err := os.Create(fileName) //创建文件
@@ -287,17 +294,17 @@ func MakeCVSNewRate(fileKey string) (*os.File, [][]string) {
 	}
 	f.WriteString("\xEF\xBB\xBF") // 写入UTF-8 BOM
 	data := make([][]string, 0)
-	title := []string{"MerchantID", "city", "name", "address", "latitude", "logitude", "phone", "rate", "reviewSize"}
+	title := []string{"MerchantID", "city", "name", "address", "latitude", "logitude", "verified", "rate", "reviewSize", "isVerified","deliveryPromotion"}
 	data = append(data, title)
 	return f, data
 }
 
-func ScrapeNowMerchant(cityId int64, rows int,sortType int64,districtID int64) {
+func ScrapeNowMerchant(cityId int64, rows int, sortType int64, districtID int64) {
 	idChan := make(chan int64)
 	//threadSize := make(chan bool, 30)
 	detailChan := make(chan dto.DetailTotal, 50)
 	ctx, cancel := context.WithCancel(context.Background())
-	city, size := PutMerchantID(cityId, idChan,sortType,districtID, cancel)
+	city, size := PutMerchantID(cityId, idChan, sortType, districtID, cancel)
 	fmt.Println("get MeteData done")
 	go func(idChan chan int64) {
 		for i := 0; i < 40; i++ {
@@ -313,12 +320,12 @@ func ScrapeNowMerchant(cityId int64, rows int,sortType int64,districtID int64) {
 	wg.Wait()
 }
 
-func ScrapeNowMerchantRate(cityId int64, rows int,sortType int64,districtID int64) {
+func ScrapeNowMerchantRate(cityId int64, rows int, sortType int64, districtID int64) {
 	idChan := make(chan int64)
 	//threadSize := make(chan bool, 30)
 	detailChan := make(chan dto.DetailTotal, 50)
 	ctx, cancel := context.WithCancel(context.Background())
-	city, size := PutMerchantID(cityId, idChan,sortType,districtID, cancel)
+	city, size := PutMerchantID(cityId, idChan, sortType, districtID, cancel)
 	fmt.Println("get MeteData done")
 	wg := sync.WaitGroup{}
 	go func(idChan chan int64) {
@@ -425,13 +432,12 @@ func MakeCVSNew(fileKey string) (*os.File, [][]string) {
 	return f, data
 }
 
-
 func formatInt64(variable int64) string {
 	return strconv.FormatInt(variable, 10)
 }
 
 func formatFloat64(variable float64) string {
-	return fmt.Sprintf("%f",variable)
+	return fmt.Sprintf("%f", variable)
 }
 
 func doPostRequest(provinceId int, ch chan *dto.MerchantTotal, district []*dto.DistrictResult) {
