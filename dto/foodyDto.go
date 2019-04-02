@@ -102,6 +102,7 @@ type Rating struct {
 type Delivery struct {
 	Time       *Time        `json:"time"`
 	Promotions []*Promotion `json:"promotions"`
+	ShippingFee *ShippingFee `json:"shipping_fee"`
 }
 
 type Promotion struct {
@@ -121,6 +122,28 @@ type Promotion struct {
 	ApplyOrder        int64   `json:"apply_order"`
 	MinOrderValue     string  `json:"min_order_value"`
 	ShippingMethods   []int64 `json:"shipping_methods"`
+	PromoCode         string  `json:"promo_code"`
+	Title             *Title  `json:"title"`
+}
+
+type Title struct {
+	ResourceName string   `json:"resource_name"`
+	ResourceArgs []string `json:"resource_args"`
+}
+
+type ShippingFee struct {
+	Text         *Text   `json:"text"`
+	Value        int64   `json:"value"`
+	IsIncreasing int64   `json:"is_increasing"`
+	Rate         float64 `json:"rate"`
+	MinimumFee   string  `json:"minimum_fee"`
+	Unit         string  `json:"unit"`
+}
+
+type Text struct {
+	ResourceName string   `json:"resource_name"`
+	ResourceArgs []string `json:"resource_args"`
+
 }
 
 type Time struct {

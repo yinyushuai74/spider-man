@@ -243,6 +243,11 @@ func convertInfoWithRating(detaiChan chan dto.DetailTotal, provinceName string, 
 			if err != nil {
 				fmt.Println("marshal promotion err")
 			}
+			deliveryFee, err := json.Marshal(detail.DeliveryDetail.Delivery.ShippingFee)
+			if err != nil {
+				fmt.Println("marshal promotion err")
+			}
+			fmt.Println(string(deliveryFee))
 			row := []string{
 				formatInt64(detail.DeliveryDetail.DeliveryId),
 				provinceName,
@@ -255,6 +260,7 @@ func convertInfoWithRating(detaiChan chan dto.DetailTotal, provinceName string, 
 				reviewSize,
 				strconv.FormatBool(detail.DeliveryDetail.Position.IsVerified),
 				string(promoByte),
+				string(deliveryFee),
 
 			}
 			if itemNum == 0 {
@@ -294,7 +300,7 @@ func MakeCVSNewRate(fileKey string) (*os.File, [][]string) {
 	}
 	f.WriteString("\xEF\xBB\xBF") // 写入UTF-8 BOM
 	data := make([][]string, 0)
-	title := []string{"MerchantID", "city", "name", "address", "latitude", "logitude", "verified", "rate", "reviewSize", "isVerified","deliveryPromotion"}
+	title := []string{"MerchantID", "city", "name", "address", "latitude", "logitude", "verified", "rate", "reviewSize", "isVerified","Promotion", "delivery"}
 	data = append(data, title)
 	return f, data
 }
