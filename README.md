@@ -15,11 +15,13 @@
 spider-man was developed to scrape data from now.vn, this is a guide to help u run it in your local.
 
 #Step 1:Download the spider-man
+
 for mac :spider-man
 
 for windows:spider-man.exe
 
 #step 2:
+
 Open a terminal, and go to the directory where the spider-man is downloaded
 
 cd ~/Downloads
@@ -27,6 +29,7 @@ cd ~/Downloads
 
 
 #step 3:run the spider-man
+
 ./spider-man -size={{size}} -city={{cityID}} -mode={{mode}} -district={{districtID}} -sortType={{sortType}}
 
 e.g. scrape the data of Ha Noi City, get the cityID 218 from above
@@ -96,6 +99,7 @@ district list:
 districtList.txt
 
 #popular command:
+
 ./spider-man -city=217 -mode=1  
 
 all the merchant in HCM and get the merchant with menu
@@ -111,6 +115,7 @@ all the verified merchant in HCM
 
 
 #Note:
+
 the merchant information would display in your terminate and wait it, when it finished you can see `put merchantID done` in your terminate and you can use `control+c` to stop it.
 
 
