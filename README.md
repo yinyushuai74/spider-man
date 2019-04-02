@@ -92,7 +92,7 @@ Note ：district must belong with city，if not will stop.
 e.g.  if run ./spider-man -size=20 -city=218 -mode=0 -district=5 -sortType=26  districtID= 5 for Quận 3 should  belong HCM(217)  so if -city=218 will return no merchant.         
 
 district list:
-
+districtList.txt
 
 #popular command:
 ./spider-man -city=217 -mode=1  
