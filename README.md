@@ -1,15 +1,13 @@
-# spider-man
-
 ##robot.txt:
 
-*https://www.wongnai.com/robots.txt
+- https://www.wongnai.com/robots.txt
 
-*https://www.vietnammm.com/robots.txt
+- https://www.vietnammm.com/robots.txt
 
-*https://www.now.vn/robots.txt
-
+- https://www.now.vn/robots.txt
 
 ---
+
 
 #intro
 
@@ -25,22 +23,17 @@ for windows:spider-man.exe
 
 Open a terminal, and go to the directory where the spider-man is downloaded
 
-cd ~/Downloads
-
-
+`cd ~/Downloads`
 
 #step 3:run the spider-man
 
-./spider-man -size={{size}} -city={{cityID}} -mode={{mode}} -district={{districtID}} -sortType={{sortType}}
+`./spider-man -size={{size}} -city={{cityID}} -mode={{mode}} -district={{districtID}} -sortType={{sortType}}`
 
 e.g. scrape the data of Ha Noi City, get the cityID 218 from above
 
- ./spider-man -city=218
-arguments in command:
--size : How many rows for each csv file default:5000 rows per file
--city : Which city is your target city default: HCM(217)
- HCM City 217
+`./spider-man -city=218 arguments in command: -size : How many rows for each csv file default:5000 rows per file -city : Which city is your target city default: HCM(217) HCM City 217`
 
+---
 Ha Noi City 218
 
 Da Nang City 219
@@ -67,13 +60,13 @@ Quang Ninh 265
 
 Quang Nam 263
 
--mode : scrape mode default simple mode
-  0: simple mode would only scrape merchant info ( no menu)
+---
 
-  1: elaborate mode would scrape menu (merchant info and menu)
+-mode : scrape mode default simple mode 0: simple mode would only scrape merchant info ( no menu)
 
--sortType:sort type 
-recent(normal, default):10
+1: elaborate mode would scrape menu (merchant info and menu)
+
+-sortType:sort type recent(normal, default):10
 
 verified: 26
 
@@ -91,46 +84,32 @@ top:2
 
 new:29
 
--district: only scrape the target district (default: do not filter specific district scrape all merchant of the city )
-Note ：district must belong with city，if not will stop.
+---
 
-e.g.  if run ./spider-man -size=20 -city=218 -mode=0 -district=5 -sortType=26  districtID= 5 for Quận 3 should  belong HCM(217)  so if -city=218 will return no merchant.         
+-district: only scrape the target district (default: do not filter specific district scrape all merchant of the city ) Note ：district must belong with city，if not will stop.
 
-district list:
-districtList.txt
+e.g. if run `./spider-man -size=20 -city=218 -mode=0 -district=5 -sortType=26 districtID= 5 for Quận 3 should belong HCM(217) so if -city=218 will return no merchant.`
+
+district list: districtList.txt
+
+---
 
 #popular command:
 
-./spider-man -city=217 -mode=1  
+`./spider-man -city=217 -mode=1`
 
 all the merchant in HCM and get the merchant with menu
 
-./spider-man -city=217  -sortType=26
+`./spider-man -city=217 -sortType=26`
 
-all the verified merchant in HCM 
+all the verified merchant in HCM
 
-./spider-man -city=217  -size=10000 -mode=1
+`./spider-man -city=217 -size=10000 -mode=1`
 
- get the all the merchant with menu in HCM and u want the data separate of 10000 rows each file
-
-
+get the all the merchant with menu in HCM and u want the data separate of 10000 rows each file
 
 #Note:
 
-the merchant information would display in your terminate and wait it, when it finished you can see `put merchantID done` in your terminate and you can use `control+c` to stop it.
-
-
-
-
+the merchant information would display in your terminate and wait it, when it finished you can see put merchantID done in your terminate and you can use control+c to stop it.
 
 then the file name of merchant_{{cityname}}_{{index}}.csv would be display( if interrupt when the scrape unfinished the file would be blank).
-
-
-
-
-
-
-
-
-
-
